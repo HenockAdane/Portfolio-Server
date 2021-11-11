@@ -15,7 +15,7 @@ const ContactForm = require("./ContactForm")
 ContactForm(app)
 
 app.get("/", (req,res) => {
-    res.status(200).send(process.env.TO)
+    res.status(200).send("Hey there :)")
 })
 
 app.listen(port, ()=> console.log(`listening to port ${port}`));
